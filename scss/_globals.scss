@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  font-family: $manrope;
+
+  
+  background-color: $clr-light-grayish-blue;
+ 
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 15.4px);
+}
+
+img {
+  max-width: 100%;
+}
