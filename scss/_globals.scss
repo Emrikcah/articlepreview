@@ -11,9 +11,7 @@ body {
   line-height: 1.4;
   font-family: $manrope;
 
-  
   background-color: $clr-light-grayish-blue;
- 
 }
 
 main {
@@ -24,4 +22,18 @@ main {
 
 img {
   max-width: 100%;
+}
+
+%icon-shared {
+  background-color: $clr-light-grayish-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+
+  .icon {
+    width: 1.25rem;
+  }
 }
