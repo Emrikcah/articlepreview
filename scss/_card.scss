@@ -10,7 +10,7 @@
     background-image: url("../images/drawers.jpg");
     background-position: center;
     background-size: cover;
-    height: 176px;
+    height: 190px;
   }
 
   .text-container {
@@ -89,7 +89,7 @@
     // height: 80px;
     padding: 13px 0;
     transform: translateY(100%);
-    transition: all 0.3s linear;
+    transition: transform 0.3s linear;
     background-color: $clr-dark-grayish-blue;
     display: grid;
 
