@@ -21,18 +21,23 @@
         .name-container {
           margin-left: -140px;
         }
+
+        .icon-container{
+          position: relative;
+          z-index: 999;
+        }
       }
     } //end text container
 
     .social-icons {
       opacity: 0;
-      bottom: 80px;
-      right: -70px;
+      bottom: 84.2px;
+      right: -69px;
       width: 248px;
-      height: 67px;
+      height: 55px;
       padding: 0;
       border-radius: 10px;
-    // transition: all 0.3s linear;
+    transition: transform 0.3s cubic-bezier(0.68,-0.15,0.265,1.55);
 
      
 
