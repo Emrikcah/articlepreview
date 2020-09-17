@@ -1,6 +1,6 @@
 const toggleOpen = document.querySelector('[data-open]');
 const showIcons = document.querySelector('.social-icons');
-const toggleClose = document.querySelector('[data-close');
+const toggleClose = document.querySelector('[data-close]');
 
 
 toggleOpen.addEventListener('click',()=>{
