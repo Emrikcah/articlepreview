@@ -121,7 +121,6 @@ img {
 .card .social-icons {
   position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
   padding: 13px 0;
   transform: translateY(100%);
@@ -163,6 +162,7 @@ img {
   }
   .card {
     width: 730px;
+    overflow: visible;
   }
   .card .img {
     width: 100%;
@@ -176,8 +176,8 @@ img {
   }
   .card .social-icons {
     opacity: 0;
-    bottom: 150px;
-    right: 0;
+    bottom: 80px;
+    right: -70px;
     width: 248px;
     height: 67px;
     padding: 0;
@@ -188,9 +188,6 @@ img {
   }
   .card .social-icons .icons .social-text {
     font-size: 10px;
-  }
-  .card .social-icons .icons .closeBtn {
-    display: none;
   }
   .card .social-icons:after {
     position: absolute;
