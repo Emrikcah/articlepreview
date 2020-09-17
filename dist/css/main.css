@@ -189,6 +189,9 @@ img {
   .card .social-icons .icons .social-text {
     font-size: 10px;
   }
+  .card .social-icons .icons .closeBtn {
+    display: none;
+  }
   .card .social-icons:after {
     position: absolute;
     content: "";
