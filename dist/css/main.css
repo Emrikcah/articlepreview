@@ -123,7 +123,7 @@ img {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  padding: 13px 0;
   transform: translateY(100%);
   transition: all 0.3s linear;
   background-color: #48556a;
@@ -154,4 +154,55 @@ img {
 
 .card .social-icons.fromBottom {
   transform: translateY(0);
+}
+
+@media (min-width: 900px) {
+  .card,
+  .text-container {
+    display: flex;
+  }
+  .card {
+    width: 730px;
+  }
+  .card .img {
+    width: 100%;
+    height: 100%;
+  }
+  .card .text-container {
+    flex-direction: column;
+  }
+  .card .text-container .profile .name-container {
+    margin-left: -140px;
+  }
+  .card .social-icons {
+    opacity: 0;
+    bottom: 150px;
+    right: 0;
+    width: 248px;
+    height: 67px;
+    padding: 0;
+    border-radius: 10px;
+  }
+  .card .social-icons img {
+    width: 15px;
+  }
+  .card .social-icons .icons .social-text {
+    font-size: 10px;
+  }
+  .card .social-icons .icons .closeBtn {
+    display: none;
+  }
+  .card .social-icons:after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #48556a;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .card .social-icons.fromBottom {
+    opacity: 1;
+  }
 }
