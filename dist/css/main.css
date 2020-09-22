@@ -34,7 +34,8 @@ img {
 }
 
 .card .text-container .profile .icon-container .icon, .card .social-icons .icon-container .icon {
-  width: 1.25rem;
+  width: 15px;
+  height: 13px;
 }
 
 .card {
@@ -73,7 +74,7 @@ img {
 }
 
 .card .text-container .title .text-title {
-  margin-top: 0;
+  margin: 0;
 }
 
 .card .text-container .text {
@@ -147,10 +148,6 @@ img {
   margin-left: -10px;
 }
 
-.card .social-icons .icon-container .icon {
-  fill: #fff;
-}
-
 .card .social-icons.fromBottom {
   transform: translateY(0);
 }
@@ -171,12 +168,24 @@ img {
   .card .text-container {
     flex-direction: column;
   }
+  .card .text-container .text {
+    margin-bottom: 15px;
+  }
+  .card .text-container .text .text-para {
+    margin-bottom: 0;
+  }
   .card .text-container .profile .name-container {
     margin-left: -140px;
   }
   .card .text-container .profile .icon-container {
     position: relative;
-    z-index: 999;
+    z-index: 2;
+  }
+  .card .text-container .profile .icon-container.changeBtnClr {
+    background: #48556a;
+  }
+  .card .text-container .profile svg path.changeIconClr {
+    fill: #fff;
   }
   .card .social-icons {
     opacity: 0;
@@ -184,18 +193,9 @@ img {
     right: -69px;
     width: 248px;
     height: 55px;
-    padding: 0;
+    padding: 0 10px;
     border-radius: 10px;
-    transition: transform 0.3s cubic-bezier(0.68, -0.15, 0.265, 1.55);
-  }
-  .card .social-icons img {
-    width: 15px;
-  }
-  .card .social-icons .icons .social-text {
-    font-size: 10px;
-  }
-  .card .social-icons .icons .closeBtn {
-    display: none;
+    transition: transform 0.3s cubic-bezier(0.68, 0.31, 0.265, 1.55);
   }
   .card .social-icons:after {
     position: absolute;
@@ -206,6 +206,15 @@ img {
     bottom: -8px;
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
+  }
+  .card .social-icons img {
+    width: 20px;
+  }
+  .card .social-icons .icons .social-text {
+    font-size: 15px;
+  }
+  .card .social-icons .icons .closeBtn {
+    display: none;
   }
   .card .social-icons.fromBottom {
     opacity: 1;

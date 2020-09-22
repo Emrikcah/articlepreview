@@ -31,7 +31,7 @@
       font-weight: 700;
 
       .text-title {
-        margin-top: 0;
+        margin: 0;
       }
     }
 
@@ -76,7 +76,6 @@
 
       .icon-container {
         @extend %icon-shared;
-       
       }
     } //end profile
   }
@@ -111,11 +110,6 @@
       @extend %icon-shared;
       background: $clr-desaturated-dark-blue;
       margin-left: -10px;
-     
-
-      .icon {
-        fill: #fff;
-      }
     }
 
     &.fromBottom {
