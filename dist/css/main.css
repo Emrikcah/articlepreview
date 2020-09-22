@@ -184,7 +184,7 @@ img {
   .card .text-container .profile .icon-container.changeBtnClr {
     background: #48556a;
   }
-  .card .text-container .profile svg path.changeIconClr {
+  .card .text-container .profile path.changeIconClr {
     fill: #fff;
   }
   .card .social-icons {
