@@ -4,7 +4,7 @@ const toggleClose = document.querySelector("[data-close]");
 const fillClr = document.querySelector('path');
 
 
-//this function will keep the classes in sync from mobile to desktop views
+//this function will keep the classes in sync on data-open and data-close
 const changeBtnAndIconClr = () => {
   fillClr.classList.toggle("changeIconClr");
   toggleOpen.classList.toggle("changeBtnClr");
