@@ -1,15 +1,21 @@
-const toggleOpen = document.querySelector('[data-open]');
-const showIcons = document.querySelector('.social-icons');
-const toggleClose = document.querySelector('[data-close]');
+const toggleOpen = document.querySelector("[data-open]");
+const showIcons = document.querySelector(".social-icons");
+const toggleClose = document.querySelector("[data-close]");
+const fillClr = document.querySelector('path');
 
 
-toggleOpen.addEventListener('click',()=>{
-      console.log('open');
-      showIcons.classList.toggle('fromBottom')
-})
+//this function will keep the classes in sync on data-open and data-close
+const changeBtnAndIconClr = () => {
+  fillClr.classList.toggle("changeIconClr");
+  toggleOpen.classList.toggle("changeBtnClr");
+};
 
-toggleClose.addEventListener('click',()=>{
-      console.log('close');
+toggleOpen.addEventListener("click", () => {
+  changeBtnAndIconClr();
+  showIcons.classList.toggle("fromBottom");
+});
 
-      showIcons.classList.toggle('fromBottom')
-})
+toggleClose.addEventListener("click", () => {
+  changeBtnAndIconClr();
+  showIcons.classList.toggle("fromBottom");
+});
